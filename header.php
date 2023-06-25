@@ -16,7 +16,7 @@ if ($_SESSION['status_login'] != true){
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: 4px 4px 5px -4px;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">BACA BUKU</a>
+        <a class="navbar-brand" href="home.php">BACA BUKU</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,9 +27,6 @@ if ($_SESSION['status_login'] != true){
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="buku.php">Buku</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="histori_peminjaman.php">History</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="logout.php">Logout</a>
