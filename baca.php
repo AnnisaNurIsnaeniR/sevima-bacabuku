@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-8">
             <div class="card-body">
-            <form action="masukkan_keranjang.php?id_buku=<?=$dt_buku['id_buku']?>" method="POST">
+            <form>
                 <input type="hidden" name="id_buku" value="<?=$data_buku['id_buku']?>">
                 <table class="table table-hover table-stripped">
                     <thead>
