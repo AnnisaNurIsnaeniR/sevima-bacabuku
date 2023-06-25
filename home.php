@@ -25,7 +25,7 @@
 				<div class="col-md-12 mt-5 text-center">
 					<h2>Baca Buku Assistant</h2>
 					<form action="" method="post">
-						<input type="text" class="form-control" name="q" placeholder="ketikan apapun disini">
+						<input type="text" class="form-control" name="ai" placeholder="ketikan apapun disini">
 					</form>
 				</div>
 			</div>
@@ -36,9 +36,9 @@
 	  
 			<div class="row mt-5">
 				<?php
-				if(isset($_POST['q'])){
+				if(isset($_POST['ai'])){
 					
-					$query = $_POST['q'];
+					$query = $_POST['ai'];
 					
 						$queryOne = 'apapun tentang baca buku." question:'.$query.' Ans:';
 					$ar = array(
@@ -56,7 +56,7 @@
 					$data = json_encode($ar);
 					
 					
-					///curl
+				
 					$ch = curl_init();
 
 				curl_setopt($ch, CURLOPT_URL,"https://api.openai.com/v1/completions");
@@ -80,8 +80,6 @@
 					
 				
 				echo $decode['choices'][0]['text'];
-					
-					
 					
 					
 				}
