@@ -15,7 +15,7 @@
                 <h5 class="card-title"><?=$dt_buku['judul_buku']?></h5>
                 Deskripsi:
                 <p class="card-text"><?=substr($dt_buku['deskripsi'], 0,225)?></p>
-                <a href="baca_buku.php?id_buku=<?=$dt_buku['id_buku']?>" class="btn btn-primary">Baca</a>
+                <a href="baca.php?id_buku=<?=$dt_buku['id_buku']?>" class="btn btn-primary">Baca</a>
               </div>
             </div>
         </div>
